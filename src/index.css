@@ -75,6 +75,7 @@ button {
 button.btn {
   color: white;
   padding: 0.3em 0.7em;
+  opacity: .7;
 }
 button.btn-del {
   background-color: rgb(230, 48, 48);
@@ -84,12 +85,19 @@ button.btn-update {
 }
 button:hover {
   border-color: #646cff;
+  opacity: 1;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+.li-update {
+  display: flex;
+}
+.li-update input {
+  flex-grow: 1;
+  /* height: 70px; */
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
